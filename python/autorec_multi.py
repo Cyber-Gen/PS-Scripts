@@ -1,3 +1,15 @@
+"""DEPRECATED: merged into autorec.py (2026-05-24).
+
+This script is kept for reference only. All functionality — multi-format nmap
+output (-oA) and conditional vhost scanning, plus dynamic wordlist discovery,
+requirements checks, concurrent sub-scans, per-target output isolation, and
+multi-target mode — now lives in PS-Scripts/python/autorec.py. See
+AUTOREC_PLAN.md for the consolidation notes.
+
+Equivalent invocation on the new script:
+    python3 autorec.py <target_ip> {Full|Basic} --report none
+"""
+
 import argparse
 import subprocess
 import os

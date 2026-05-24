@@ -1,3 +1,15 @@
+"""DEPRECATED: merged into autorec.py (2026-05-24).
+
+This script is kept for reference only. All functionality — combined report
+output, plus dynamic wordlist discovery, requirements checks, concurrent
+sub-scans, per-target output isolation, and multi-target mode — now lives in
+PS-Scripts/python/autorec.py. See AUTOREC_PLAN.md for the consolidation notes.
+
+Equivalent invocation on the new script:
+    python3 autorec.py <target_ip> {Full|Basic} \\
+        --nmap-format xml --report combined --vhost always
+"""
+
 import argparse
 import subprocess
 import os
